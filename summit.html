@@ -37,14 +37,21 @@
   <section class="hero" style="margin-top: 80px; position: relative; padding: 10rem 0; background: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), url('images/service_fleet.jpg') center/cover; color: var(--white); text-align: center;">
     <div class="container fade-in-up">
       <h1 class="hero-title" data-i18n="summit_hero_title" style="color: var(--white); margin-bottom: 1.5rem; width: 100%;">
-        Summit Car Rental Solutions
+        Summit Rental Car
       </h1>
       <p class="hero-subtitle" data-i18n="summit_hero_sub" style="max-width: 800px; margin: 0 auto 2.5rem; color: var(--light-gray);">
         Reliable and professional vehicle rental services for individuals, businesses, and operational needs.
       </p>
       <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="contact.html" class="btn btn-primary" data-i18n="btn_request_quote">Request a Quote</a>
+        <a href="contact.html" class="btn" data-i18n="btn_request_quote" style="background: transparent; border: 2px solid var(--white); color: var(--white); padding: 0.8rem 2.5rem; border-radius: 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; display: inline-block;">Request a Quote</a>
       </div>
+      <style>
+        .hero .btn:hover {
+          background: rgba(255, 255, 255, 0.1) !important;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+      </style>
     </div>
   </section>
 
@@ -68,35 +75,61 @@
         <h2 class="section-title" data-i18n="summit_fleet_title">Our Fleet & Rental Solutions</h2>
       </div>
       
-      <div class="grid-3">
+      <div class="grid-2">
         <!-- Executive SUVs -->
-        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); padding: 2rem;">
-          <h3 data-i18n="summit_fleet_exe_suv_title" style="margin-bottom: 1rem;">Executive SUVs</h3>
-          <p class="text-small" data-i18n="summit_fleet_exe_suv_text" style="color: var(--text-muted);">Premium SUVs for executive transport and comfortable long-distance travel.</p>
+        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); display: flex; flex-direction: column;">
+          <div style="width: 100%; height: 280px; overflow: hidden;">
+            <img src="images/fleet_suv.jpg" alt="Executive SUV" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          </div>
+          <div style="padding: 2.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 data-i18n="summit_fleet_exe_suv_title" style="margin-bottom: 1rem;">Executive SUVs</h3>
+            <p class="text-small" data-i18n="summit_fleet_exe_suv_text" style="color: var(--text-muted); margin-bottom: 2rem;">Premium SUVs for executive transport and comfortable long-distance travel.</p>
+            <div style="margin-top: auto;">
+              <a href="contact.html" class="btn btn-primary" data-i18n="btn_request_quote" style="width: 100%; text-align: center;">Request a Quote</a>
+            </div>
+          </div>
         </div>
 
-        <!-- Corporate Vehicles -->
-        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); padding: 2rem; transition-delay: 0.1s;">
-          <h3 data-i18n="summit_fleet_corp_veh_title" style="margin-bottom: 1rem;">Corporate Vehicles</h3>
-          <p class="text-small" data-i18n="summit_fleet_corp_veh_text" style="color: var(--text-muted);">Reliable sedans and compacts for everyday business mobility.</p>
+        <!-- Sedans -->
+        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); transition-delay: 0.1s; display: flex; flex-direction: column;">
+          <div style="width: 100%; height: 280px; overflow: hidden;">
+            <img src="images/fleet_sedan.jpg" alt="Sedan" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          </div>
+          <div style="padding: 2.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 data-i18n="summit_fleet_corp_veh_title" style="margin-bottom: 1rem;">Sedans</h3>
+            <p class="text-small" data-i18n="summit_fleet_corp_veh_text" style="color: var(--text-muted); margin-bottom: 2rem;">Reliable sedans and compacts for everyday business mobility.</p>
+            <div style="margin-top: auto;">
+              <a href="contact.html" class="btn btn-primary" data-i18n="btn_request_quote" style="width: 100%; text-align: center;">Request a Quote</a>
+            </div>
+          </div>
         </div>
 
-        <!-- Work Pickups -->
-        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); padding: 2rem; transition-delay: 0.2s;">
-          <h3 data-i18n="summit_fleet_work_pu_title" style="margin-bottom: 1rem;">Work Pickups</h3>
-          <p class="text-small" data-i18n="summit_fleet_work_pu_text" style="color: var(--text-muted);">High-performance pickup trucks for construction sites and field work.</p>
+        <!-- Vans -->
+        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); transition-delay: 0.2s; display: flex; flex-direction: column;">
+          <div style="width: 100%; height: 280px; overflow: hidden;">
+            <img src="images/fleet_van.jpg" alt="Van" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          </div>
+          <div style="padding: 2.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 data-i18n="summit_fleet_work_pu_title" style="margin-bottom: 1rem;">Vans</h3>
+            <p class="text-small" data-i18n="summit_fleet_work_pu_text" style="color: var(--text-muted); margin-bottom: 2rem;">High-performance vans for commercial and logistical support.</p>
+            <div style="margin-top: auto;">
+              <a href="contact.html" class="btn btn-primary" data-i18n="btn_request_quote" style="width: 100%; text-align: center;">Request a Quote</a>
+            </div>
+          </div>
         </div>
 
         <!-- Utility Vehicles -->
-        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); padding: 2rem; transition-delay: 0.3s;">
-          <h3 data-i18n="summit_fleet_util_veh_title" style="margin-bottom: 1rem;">Utility Vehicles</h3>
-          <p class="text-small" data-i18n="summit_fleet_util_veh_text" style="color: var(--text-muted);">Specialized vehicles for various maintenance and utility tasks.</p>
-        </div>
-
-        <!-- Operational Support Fleet -->
-        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); padding: 2rem; transition-delay: 0.4s;">
-          <h3 data-i18n="summit_fleet_op_fleet_title" style="margin-bottom: 1rem;">Operational Support Fleet</h3>
-          <p class="text-small" data-i18n="summit_fleet_op_fleet_text" style="color: var(--text-muted);">A comprehensive range of vehicles to support large-scale field operations.</p>
+        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); transition-delay: 0.3s; display: flex; flex-direction: column;">
+          <div style="width: 100%; height: 280px; overflow: hidden;">
+            <img src="images/fleet_utility.jpg" alt="Utility Vehicle" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          </div>
+          <div style="padding: 2.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 data-i18n="summit_fleet_util_veh_title" style="margin-bottom: 1rem;">Utility Vehicles</h3>
+            <p class="text-small" data-i18n="summit_fleet_util_veh_text" style="color: var(--text-muted); margin-bottom: 2rem;">Specialized vehicles for various maintenance and utility tasks.</p>
+            <div style="margin-top: auto;">
+              <a href="contact.html" class="btn btn-primary" data-i18n="btn_request_quote" style="width: 100%; text-align: center;">Request a Quote</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -112,18 +145,27 @@
       <div class="grid-3">
         <!-- Daily -->
         <div class="fade-in-up" style="text-align: center; padding: 2rem;">
+          <div style="margin-bottom: 1.5rem; color: var(--accent); display: flex; justify-content: center;">
+            <svg style="width: 32px; height: 32px; fill: currentColor;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zM312 376c13.3 0 24-10.7 24-24s-10.7-24-24-24l-176 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l176 0z"/></svg>
+          </div>
           <h3 data-i18n="summit_plans_daily" style="margin-bottom: 1rem; color: var(--accent);">Daily Rentals</h3>
           <p class="text-small" data-i18n="summit_plans_daily_text">Perfect for short-term needs and immediate mobility.</p>
         </div>
 
         <!-- Monthly -->
         <div class="fade-in-up" style="text-align: center; padding: 2rem; transition-delay: 0.1s;">
+          <div style="margin-bottom: 1.5rem; color: var(--accent); display: flex; justify-content: center;">
+            <svg style="width: 32px; height: 32px; fill: currentColor;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 64C0 28.7 28.7 0 64 0l384 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm64 0l0 48 384 0 0-48L64 64zm384 112L64 176l0 272 384 0 0-272zM256 384a64 64 0 1 1 0-128 64 64 0 1 1 0 128z"/></svg>
+          </div>
           <h3 data-i18n="summit_plans_monthly" style="margin-bottom: 1rem; color: var(--accent);">Monthly Rentals</h3>
           <p class="text-small" data-i18n="summit_plans_monthly_text">Cost-effective solutions for mid-term projects and requirements.</p>
         </div>
 
         <!-- Corporate -->
         <div class="fade-in-up" style="text-align: center; padding: 2rem; transition-delay: 0.2s;">
+          <div style="margin-bottom: 1.5rem; color: var(--accent); display: flex; justify-content: center;">
+            <svg style="width: 32px; height: 32px; fill: currentColor;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM64 144H448c8.8 0 16 7.2 16 16V320H48V160c0-8.8 7.2-16 16-16zM48 368H464v48c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V368z"/></svg>
+          </div>
           <h3 data-i18n="summit_plans_corp" style="margin-bottom: 1rem; color: var(--accent);">Corporate Plans</h3>
           <p class="text-small" data-i18n="summit_plans_corp_text">Customized long-term leasing options tailored to business operations.</p>
         </div>
@@ -132,7 +174,7 @@
   </section>
 
   <!-- Why Choose Us Section -->
-  <section style="padding: 8rem 0; background-color: var(--primary); color: var(--white);">
+  <section style="padding: 8rem 0; background-color: #0D1D34; color: var(--white);">
     <div class="container">
       <div class="grid-2 fade-in-up">
         <div>
@@ -167,16 +209,6 @@
     </div>
   </section>
 
-  <!-- Final CTA Section -->
-  <section class="cta-section">
-    <div class="container text-center fade-in-up">
-      <h2 class="text-h2" data-i18n="summit_cta_title" style="color: var(--white); margin-bottom: 1.5rem;">Ready to Get Started?</h2>
-      <p class="text-body" data-i18n="summit_cta_text" style="color: var(--light-gray); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-        Contact our team to find the right vehicle solution for your needs.
-      </p>
-      <a href="contact.html" class="btn btn-primary" data-i18n="btn_contact">Contact Us</a>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer>
