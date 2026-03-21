@@ -35,6 +35,40 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary);
   font-weight: 700;
   line-height: 1.2;
+  text-wrap: balance;
+}
+
+h1, .text-h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h2, .text-h2 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+h3, .text-h3 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  line-height: 1.4;
+}
+
+h4, .text-h4 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+p, .text-body {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.6;
+}
+
+small, .text-small {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-muted);
 }
 
 a {
@@ -73,33 +107,43 @@ img {
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
   margin-bottom: 2rem;
   position: relative;
   text-wrap: balance;
 }
 
+h1.section-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.15;
   text-wrap: balance;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  line-height: 1.6;
   text-wrap: balance;
 }
 
 
 /* Buttons */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem 2rem;
+  font-size: 1.125rem;
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
   border: none;
   transition: var(--transition);
+  text-align: center;
 }
 
 .btn-primary {
@@ -125,8 +169,8 @@ img {
 }
 
 .btn-lg {
-  padding: 1.2rem 2.5rem;
-  font-size: 1.1rem;
+  padding: 1.125rem 2.5rem;
+  font-size: 1.125rem;
 }
 
 .btn-outline-light {
@@ -262,6 +306,51 @@ section {
 
 .bg-light {
   background-color: var(--light-gray);
+}
+
+/* CTA Section */
+.cta-section {
+  position: relative;
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 8rem 2rem;
+  border-bottom: 2px solid rgba(255,255,255,0.05);
+  /* Overlay + Grid Lines + Glowing Depth */
+  background-image:
+    linear-gradient(135deg, rgba(10, 25, 47, 0.96) 0%, rgba(23, 42, 69, 0.88) 100%),
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px),
+    radial-gradient(circle at 15% 50%, rgba(46, 91, 141, 0.2) 0%, transparent 60%),
+    radial-gradient(circle at 85% 80%, rgba(46, 91, 141, 0.15) 0%, transparent 50%);
+  background-size: 100% 100%, 40px 40px, 40px 40px, 100% 100%, 100% 100%;
+  background-position: center;
+  overflow: hidden;
+}
+
+.cta-title {
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.cta-text {
+  color: var(--medium-gray);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-size: 1.125rem;
+}
+
+.btn-cta {
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 1.25rem 3rem;
+  font-size: 1.125rem;
+  border-radius: 4px;
+}
+.btn-cta:hover {
+  background-color: var(--white);
+  color: var(--primary);
 }
 
 /* Footer */
