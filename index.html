@@ -36,13 +36,16 @@
   <!-- Hero Section -->
   <section class="hero" style="margin-top: 80px; position: relative; padding: 10rem 0; background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('images/hero_home.png') center/cover; color: var(--white); text-align: center;">
     <div class="container fade-in-up">
-      <h1 data-i18n="hero_title" style="font-size: 3.5rem; color: var(--white); margin-bottom: 1.5rem; font-weight: 800; max-width: 900px; margin-left: auto; margin-right: auto;">
+      <h1 class="hero-title" data-i18n="hero_title" style="color: var(--white); margin-bottom: 1.5rem; font-weight: 800; max-width: 900px; margin-left: auto; margin-right: auto;">
         Engineering • Infrastructure • Equipment & Fleet Solutions
       </h1>
-      <p data-i18n="hero_subtitle" style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 2.5rem; color: var(--light-gray); font-weight: 300;">
+      <p class="hero-subtitle" data-i18n="hero_subtitle" style="max-width: 800px; margin: 0 auto 2.5rem; color: var(--light-gray); font-weight: 300;">
         Professional solutions in infrastructure, engineering, equipment rental, and operational support for energy and construction projects.
       </p>
-      <a href="contact.html" class="btn btn-primary" data-i18n="btn_contact" style="background-color: var(--accent); font-size: 1.1rem; padding: 1.2rem 2.5rem;">Contact Us</a>
+      <div class="hero-buttons" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="btn_contact" style="background-color: var(--accent);">Contact Us</a>
+        <a href="services.html" class="btn btn-outline btn-outline-light btn-lg" data-i18n="btn_explore">Explore Services</a>
+      </div>
     </div>
   </section>
 
@@ -53,8 +56,11 @@
         <div class="fade-in-up">
           <span class="section-subtitle" data-i18n="home_who">Who We Are</span>
           <h2 class="section-title" data-i18n="home_about_title">About RCV Corporation</h2>
-          <p data-i18n="home_about_text" style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">
-            RCV Corporation operates in infrastructure development, engineering support, equipment rental, fleet services, and operational logistics for energy and construction projects. The company is structured to support complex projects with safety, efficiency, and operational excellence.
+          <p data-i18n="home_about_text_1" style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1rem;">
+            RCV Corp is a business group focused on delivering practical and reliable solutions across transportation, equipment rental, and infrastructure support. Based in Orlando, Florida, the company is building a strong presence through service quality, operational responsibility, and long-term business vision.
+          </p>
+          <p data-i18n="home_about_text_2" style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">
+            With a growing portfolio of services, RCV Corp is committed to creating dependable solutions that support individuals, businesses, and project operations with professionalism and efficiency.
           </p>
           <a href="about.html" class="btn btn-outline" data-i18n="btn_learn_more">Learn More</a>
         </div>
@@ -73,14 +79,14 @@
         <h2 class="section-title" data-i18n="home_services_title">Our Services</h2>
       </div>
       
-      <div class="grid-4">
+      <div class="grid-3">
         
         <!-- Service 1 -->
         <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition);">
-          <img src="images/service_infra.png" alt="Infrastructure & Engineering" style="height: 200px; width: 100%; object-fit: cover;">
+          <img src="images/service_fleet.png" alt="Summit Car Rental" style="height: 200px; width: 100%; object-fit: cover;">
           <div style="padding: 2rem;">
-            <h3 data-i18n="srv_infra" style="margin-bottom: 1rem; font-size: 1.25rem;">Infrastructure & Engineering</h3>
-            <p data-i18n="srv_infra_text" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Engineering support for infrastructure, logistics, and operational development.</p>
+            <h3 data-i18n="srv_car_title" style="margin-bottom: 1rem; font-size: 1.25rem;">Summit Car Rental</h3>
+            <p data-i18n="srv_car_text" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Reliable vehicle rental solutions including vans, sedans, and flexible mobility options designed for convenience, professionalism, and customer trust.</p>
             <a href="services.html" data-i18n="explore_further" style="color: var(--accent); font-weight: 600;">Explore further &rarr;</a>
           </div>
         </div>
@@ -89,28 +95,18 @@
         <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); transition-delay: 0.1s;">
           <img src="images/service_equip.png" alt="Equipment Rental" style="height: 200px; width: 100%; object-fit: cover;">
           <div style="padding: 2rem;">
-            <h3 data-i18n="srv_equip" style="margin-bottom: 1rem; font-size: 1.25rem;">Equipment Rental</h3>
-            <p data-i18n="srv_equip_text" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Heavy equipment and construction tools available for operational projects.</p>
+            <h3 data-i18n="srv_equip_title" style="margin-bottom: 1rem; font-size: 1.25rem;">Equipment Rental</h3>
+            <p data-i18n="srv_equip_text" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Heavy and light equipment rental solutions, including mini excavators and support machinery for construction, operational, and field projects.</p>
             <a href="services.html" data-i18n="explore_further" style="color: var(--accent); font-weight: 600;">Explore further &rarr;</a>
           </div>
         </div>
 
         <!-- Service 3 -->
         <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); transition-delay: 0.2s;">
-          <img src="images/service_fleet.png" alt="Fleet Rental" style="height: 200px; width: 100%; object-fit: cover;">
+          <img src="images/service_energy.png" alt="Energy Infrastructure Projects" style="height: 200px; width: 100%; object-fit: cover;">
           <div style="padding: 2rem;">
-            <h3 data-i18n="srv_fleet" style="margin-bottom: 1rem; font-size: 1.25rem;">Fleet Rental</h3>
-            <p data-i18n="srv_fleet_text" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Corporate fleet solutions including SUVs, pickups, and operational vehicles.</p>
-            <a href="services.html" data-i18n="explore_further" style="color: var(--accent); font-weight: 600;">Explore further &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); transition-delay: 0.3s;">
-          <img src="images/service_energy.png" alt="Energy Projects" style="height: 200px; width: 100%; object-fit: cover;">
-          <div style="padding: 2rem;">
-            <h3 data-i18n="srv_energy" style="margin-bottom: 1rem; font-size: 1.25rem;">Energy Projects</h3>
-            <p data-i18n="srv_energy_text" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Technical and logistical support for energy infrastructure projects.</p>
+            <h3 data-i18n="srv_energy_proj_title" style="margin-bottom: 1rem; font-size: 1.25rem;">Energy Infrastructure Projects</h3>
+            <p data-i18n="srv_energy_proj_text" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Operational and project support for energy and infrastructure initiatives, with a focus on logistics, coordination, and field execution.</p>
             <a href="services.html" data-i18n="explore_further" style="color: var(--accent); font-weight: 600;">Explore further &rarr;</a>
           </div>
         </div>
@@ -128,42 +124,38 @@
       </div>
       
       <div class="grid-3">
-        <div style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent);">
-          <h4 data-i18n="val_integrity" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Integrity and Ethics</h4>
-          <p data-i18n="val_integrity_text" style="color: var(--text-muted); font-size: 0.95rem;">Maintaining the highest standards across all business relationships.</p>
+        <div class="value-card" style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent); box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+          <h4 data-i18n="val_integrity" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Integrity</h4>
+          <p data-i18n="val_integrity_text" style="color: var(--text-muted); font-size: 0.95rem;">We believe in transparent and ethical business relationships.</p>
         </div>
-        <div style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent);">
+        <div class="value-card" style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent); box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+          <h4 data-i18n="val_reliability" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Reliability</h4>
+          <p data-i18n="val_reliability_text" style="color: var(--text-muted); font-size: 0.95rem;">We are committed to delivering dependable solutions clients can trust.</p>
+        </div>
+        <div class="value-card" style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent); box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
           <h4 data-i18n="val_op_exc" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Operational Excellence</h4>
-          <p data-i18n="val_op_exc_text" style="color: var(--text-muted); font-size: 0.95rem;">Delivering premium quality and efficiency in every project execution.</p>
+          <p data-i18n="val_op_exc_text" style="color: var(--text-muted); font-size: 0.95rem;">We value quality, organization, and strong execution in every service we provide.</p>
         </div>
-        <div style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent);">
-          <h4 data-i18n="val_safety" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Safety and Responsibility</h4>
-          <p data-i18n="val_safety_text" style="color: var(--text-muted); font-size: 0.95rem;">Prioritizing the well-being of our workforce and operational environments.</p>
+        <div class="value-card" style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent); box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+          <h4 data-i18n="val_safety" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Safety & Responsibility</h4>
+          <p data-i18n="val_safety_text" style="color: var(--text-muted); font-size: 0.95rem;">We prioritize responsible operations and professional standards.</p>
         </div>
-        <div style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent);">
-          <h4 data-i18n="val_innovation" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Innovation & Improvement</h4>
-          <p data-i18n="val_innovation_text" style="color: var(--text-muted); font-size: 0.95rem;">Continuously seeking advanced methods and better technological solutions.</p>
-        </div>
-        <div style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent);">
-          <h4 data-i18n="val_enviro" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Environmental Responsibility</h4>
-          <p data-i18n="val_enviro_text" style="color: var(--text-muted); font-size: 0.95rem;">Committed to sustainable practices and responsible resource usage.</p>
-        </div>
-        <div style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent);">
-          <h4 data-i18n="val_partner" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Long-term Partnerships</h4>
-          <p data-i18n="val_partner_text" style="color: var(--text-muted); font-size: 0.95rem;">Building solid, strategic alliances that foster mutual and lasting growth.</p>
+        <div class="value-card" style="padding: 2rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--accent); box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+          <h4 data-i18n="val_vision" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Long-Term Vision</h4>
+          <p data-i18n="val_vision_text" style="color: var(--text-muted); font-size: 0.95rem;">We aim to build sustainable businesses and strong partnerships over time.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section style="background-color: var(--primary); color: var(--white); text-align: center; padding: 8rem 0;">
+  <section class="cta-section" style="background-color: var(--secondary); color: var(--white); text-align: center; padding: 6rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
     <div class="container fade-in-up">
-      <h2 data-i18n="cta_title" style="font-size: 3rem; color: var(--white); margin-bottom: 1.5rem;">Let's Work Together</h2>
-      <p data-i18n="cta_text" style="font-size: 1.2rem; color: var(--medium-gray); max-width: 600px; margin: 0 auto 3rem;">
-        Contact RCV Corporation to discuss infrastructure, engineering, and operational support solutions.
+      <h2 class="cta-title" data-i18n="cta_title" style="color: var(--white); margin-bottom: 1.5rem;">Let's Build Reliable Solutions Together</h2>
+      <p class="cta-text" data-i18n="cta_text" style="color: var(--medium-gray); max-width: 600px; margin: 0 auto 3rem;">
+        Get in touch with RCV Corp to learn more about our transportation, equipment rental, and infrastructure services.
       </p>
-      <a href="contact.html" data-i18n="btn_contact" class="btn btn-primary" style="background-color: var(--accent); border: 2px solid var(--accent);">Contact Us</a>
+      <a href="contact.html" data-i18n="btn_contact" class="btn btn-primary btn-lg" style="background-color: var(--accent); border: 2px solid var(--accent);">Contact Us</a>
     </div>
   </section>
 
