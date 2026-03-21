@@ -116,7 +116,7 @@
         <!-- Contact Form -->
         <div style="background: var(--white); padding: 3rem; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
           <h3 data-i18n="contact_form_title" style=" margin-bottom: 2rem;">Send a Message</h3>
-          <form action="#" method="POST">
+          <form id="contact-form" action="https://formspree.io/f/xzdjqvna" method="POST">
             <div class="form-group">
               <input type="text" class="form-control" name="name" placeholder="Name" data-i18n="form_name" required>
             </div>
@@ -129,7 +129,8 @@
             <div class="form-group">
               <textarea class="form-control" name="message" placeholder="Message" data-i18n="form_msg" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" data-i18n="btn_send" style="width: 100%;">Send Message</button>
+            <button type="submit" id="contact-submit" class="btn btn-primary" data-i18n="btn_send" style="width: 100%;">Send Message</button>
+            <p id="form-status" style="margin-top: 1.5rem; text-align: center; font-weight: 500; display: none;"></p>
           </form>
         </div>
 
@@ -203,5 +204,44 @@
 
   <script src="translations.js"></script>
   <script src="script.js"></script>
+  <script>
+    (function() {
+      const form = document.getElementById('contact-form');
+      const btn = document.getElementById('contact-submit');
+      const status = document.getElementById('form-status');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        btn.disabled = true;
+        btn.style.opacity = '0.6';
+        status.style.display = 'none';
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        })
+        .then(function(response) {
+          if (response.ok) {
+            status.textContent = 'Thank you. Your message has been sent.';
+            status.style.color = '#25d366';
+            status.style.display = 'block';
+            form.reset();
+          } else {
+            throw new Error('fail');
+          }
+        })
+        .catch(function() {
+          status.textContent = 'Something went wrong. Please try again.';
+          status.style.color = '#e74c3c';
+          status.style.display = 'block';
+        })
+        .finally(function() {
+          btn.disabled = false;
+          btn.style.opacity = '1';
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
