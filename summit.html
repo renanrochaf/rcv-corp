@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Car Rental - RCV Corporation</title>
+  <meta name="description" content="Summit Car Rental: Reliable and professional vehicle rental services for individuals, businesses, and operational needs.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><img src="images/logo-dark.png" alt="RCV Corp"></a>
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <div class="dropdown">
+          <a href="services.html" class="active" data-i18n="nav_services" style="display: flex; align-items: center; gap: 4px;">Services <svg style="width: 10px; height: 10px; fill: currentColor; margin-top: 2px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></a>
+          <div class="dropdown-content">
+            <a href="summit.html" data-i18n="nav_srv_summit">Summit</a>
+            <a href="services.html#equipment" data-i18n="nav_srv_equip">RCV Corp Equipment Rental</a>
+            <a href="services.html#infrastructure" data-i18n="nav_srv_infra">RCV Infrastructure and Engineering</a>
+            <a href="services.html#energy" data-i18n="nav_srv_energy">RCV Energy Projects</a>
+          </div>
+        </div>
+        <a href="esg.html" data-i18n="nav_esg">ESG</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <button class="lang-toggle">PT</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="margin-top: 80px; position: relative; padding: 10rem 0; background: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), url('images/service_fleet.jpg') center/cover; color: var(--white); text-align: center;">
+    <div class="container fade-in-up">
+      <h1 class="hero-title" data-i18n="summit_hero_title" style="color: var(--white); margin-bottom: 1.5rem; width: 100%;">
+        Summit Car Rental Solutions
+      </h1>
+      <p class="hero-subtitle" data-i18n="summit_hero_sub" style="max-width: 800px; margin: 0 auto 2.5rem; color: var(--light-gray);">
+        Reliable and professional vehicle rental services for individuals, businesses, and operational needs.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary" data-i18n="btn_request_quote">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section style="padding: 8rem 0;">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="fade-in-up">
+        <span class="section-subtitle" data-i18n="nav_srv_summit">Summit</span>
+        <h2 class="section-title" data-i18n="summit_overview_title" style="margin-bottom: 2rem;">Professional Vehicle Rental Services</h2>
+        <p class="text-body" data-i18n="summit_overview_text">
+          Summit Car Rental, part of RCV Corp, provides flexible and reliable vehicle rental solutions designed for both personal and operational use. Our fleet supports daily mobility, business operations, and field activities with efficiency and professionalism.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet / Services Section -->
+  <section style="padding: 8rem 0; background-color: var(--light-gray);">
+    <div class="container">
+      <div class="text-center fade-in-up" style="margin-bottom: 4rem;">
+        <h2 class="section-title" data-i18n="summit_fleet_title">Our Fleet & Rental Solutions</h2>
+      </div>
+      
+      <div class="grid-3">
+        <!-- Executive SUVs -->
+        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); padding: 2rem;">
+          <h3 data-i18n="summit_fleet_exe_suv_title" style="margin-bottom: 1rem;">Executive SUVs</h3>
+          <p class="text-small" data-i18n="summit_fleet_exe_suv_text" style="color: var(--text-muted);">Premium SUVs for executive transport and comfortable long-distance travel.</p>
+        </div>
+
+        <!-- Corporate Vehicles -->
+        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); padding: 2rem; transition-delay: 0.1s;">
+          <h3 data-i18n="summit_fleet_corp_veh_title" style="margin-bottom: 1rem;">Corporate Vehicles</h3>
+          <p class="text-small" data-i18n="summit_fleet_corp_veh_text" style="color: var(--text-muted);">Reliable sedans and compacts for everyday business mobility.</p>
+        </div>
+
+        <!-- Work Pickups -->
+        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); padding: 2rem; transition-delay: 0.2s;">
+          <h3 data-i18n="summit_fleet_work_pu_title" style="margin-bottom: 1rem;">Work Pickups</h3>
+          <p class="text-small" data-i18n="summit_fleet_work_pu_text" style="color: var(--text-muted);">High-performance pickup trucks for construction sites and field work.</p>
+        </div>
+
+        <!-- Utility Vehicles -->
+        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); padding: 2rem; transition-delay: 0.3s;">
+          <h3 data-i18n="summit_fleet_util_veh_title" style="margin-bottom: 1rem;">Utility Vehicles</h3>
+          <p class="text-small" data-i18n="summit_fleet_util_veh_text" style="color: var(--text-muted);">Specialized vehicles for various maintenance and utility tasks.</p>
+        </div>
+
+        <!-- Operational Support Fleet -->
+        <div class="service-card fade-in-up" style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); padding: 2rem; transition-delay: 0.4s;">
+          <h3 data-i18n="summit_fleet_op_fleet_title" style="margin-bottom: 1rem;">Operational Support Fleet</h3>
+          <p class="text-small" data-i18n="summit_fleet_op_fleet_text" style="color: var(--text-muted);">A comprehensive range of vehicles to support large-scale field operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rental Plans Section -->
+  <section style="padding: 8rem 0;">
+    <div class="container">
+      <div class="text-center fade-in-up" style="margin-bottom: 4rem;">
+        <h2 class="section-title" data-i18n="summit_plans_title">Flexible Rental Plans</h2>
+      </div>
+      
+      <div class="grid-3">
+        <!-- Daily -->
+        <div class="fade-in-up" style="text-align: center; padding: 2rem;">
+          <h3 data-i18n="summit_plans_daily" style="margin-bottom: 1rem; color: var(--accent);">Daily Rentals</h3>
+          <p class="text-small" data-i18n="summit_plans_daily_text">Perfect for short-term needs and immediate mobility.</p>
+        </div>
+
+        <!-- Monthly -->
+        <div class="fade-in-up" style="text-align: center; padding: 2rem; transition-delay: 0.1s;">
+          <h3 data-i18n="summit_plans_monthly" style="margin-bottom: 1rem; color: var(--accent);">Monthly Rentals</h3>
+          <p class="text-small" data-i18n="summit_plans_monthly_text">Cost-effective solutions for mid-term projects and requirements.</p>
+        </div>
+
+        <!-- Corporate -->
+        <div class="fade-in-up" style="text-align: center; padding: 2rem; transition-delay: 0.2s;">
+          <h3 data-i18n="summit_plans_corp" style="margin-bottom: 1rem; color: var(--accent);">Corporate Plans</h3>
+          <p class="text-small" data-i18n="summit_plans_corp_text">Customized long-term leasing options tailored to business operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section style="padding: 8rem 0; background-color: var(--primary); color: var(--white);">
+    <div class="container">
+      <div class="grid-2 fade-in-up">
+        <div>
+          <h2 class="section-title" data-i18n="summit_why_title" style="color: var(--white); margin-bottom: 2rem;">Why Choose Summit Car Rental</h2>
+          <p class="text-body" style="color: var(--medium-gray); margin-bottom: 2rem;">
+            We are committed to providing more than just a vehicle. We provide reliability and operational support you can count on.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span style="color: var(--accent); font-size: 1.5rem;">✓</span>
+            <span data-i18n="summit_why_1">Reliable fleet</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span style="color: var(--accent); font-size: 1.5rem;">✓</span>
+            <span data-i18n="summit_why_2">Flexible options</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span style="color: var(--accent); font-size: 1.5rem;">✓</span>
+            <span data-i18n="summit_why_3">Professional service</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span style="color: var(--accent); font-size: 1.5rem;">✓</span>
+            <span data-i18n="summit_why_4">Business-focused solutions</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span style="color: var(--accent); font-size: 1.5rem;">✓</span>
+            <span data-i18n="summit_why_5">Orlando-based</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="cta-section">
+    <div class="container text-center fade-in-up">
+      <h2 class="text-h2" data-i18n="summit_cta_title" style="color: var(--white); margin-bottom: 1.5rem;">Ready to Get Started?</h2>
+      <p class="text-body" data-i18n="summit_cta_text" style="color: var(--light-gray); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Contact our team to find the right vehicle solution for your needs.
+      </p>
+      <a href="contact.html" class="btn btn-primary" data-i18n="btn_contact">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="images/logo-light.png" alt="RCV Corp" style="height: 44px; width: auto; margin-bottom: 1.5rem; display: block;">
+          <p data-i18n="footer_tagline">Engineering • Infrastructure • Equipment & Fleet Solutions</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_links">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="about.html" data-i18n="nav_about">About</a>
+            <a href="services.html" data-i18n="nav_services">Services</a>
+            <a href="esg.html" data-i18n="nav_esg">ESG</a>
+            <a href="contact.html" data-i18n="nav_contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_location">Location</h4>
+          <p data-i18n="footer_address">Corporate Headquarters<br>United States</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_rights">&copy; 2026 RCV Corporation. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
