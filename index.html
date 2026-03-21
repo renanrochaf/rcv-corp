@@ -90,47 +90,77 @@
         <h2 class="section-title" data-i18n="home_services_title">Our Services</h2>
       </div>
 
-      <div class="grid-3">
+      <div class="service-overview-grid">
 
-        <!-- Service 1 -->
-        <div class="service-card fade-in-up"
-          style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition);">
-          <img src="images/service_fleet.jpg" alt="Summit Car Rental"
-            style="height: 200px; width: 100%; object-fit: cover;">
-          <div style="padding: 2rem;">
-            <h3 data-i18n="srv_car_title" style="margin-bottom: 1rem;">Summit Car Rental</h3>
-            <p data-i18n="srv_car_text" style="color: var(--text-muted); margin-bottom: 1.5rem;">Reliable vehicle rental
-              solutions including vans, sedans, and flexible mobility options designed for convenience, professionalism,
-              and customer trust.</p>
-            <a href="summit.html" data-i18n="explore_further" style="color: var(--accent);">Explore further &rarr;</a>
+        <!-- Service: Summit Rental Car -->
+        <div class="service-overview-card fade-in-up">
+          <div class="service-overview-img-container">
+            <img src="images/service_fleet.jpg" alt="Summit Car Rental" class="service-overview-img">
+          </div>
+          <div class="service-overview-content">
+            <h3 class="service-overview-title" data-i18n="srv_car_title">Summit Car Rental</h3>
+            <p class="service-overview-text" data-i18n="srv_car_text">Professional vehicle rental solutions for personal, business, and operational needs.</p>
+            <a href="summit.html" class="service-overview-cta" data-i18n="explore_further">
+              Explore further
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
           </div>
         </div>
 
-        <!-- Service 2 -->
-        <div class="service-card fade-in-up"
-          style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); transition-delay: 0.1s;">
-          <img src="images/service_equip.png" alt="Equipment Rental"
-            style="height: 200px; width: 100%; object-fit: cover;">
-          <div style="padding: 2rem;">
-            <h3 data-i18n="srv_equip_title" style="margin-bottom: 1rem;">Equipment Rental</h3>
-            <p data-i18n="srv_equip_text" style="color: var(--text-muted); margin-bottom: 1.5rem;">Heavy and light
-              equipment rental solutions, including mini excavators and support machinery for construction, operational,
-              and field projects.</p>
-            <a href="services.html" data-i18n="explore_further" style="color: var(--accent);">Explore further &rarr;</a>
+        <!-- Service: Equipment Rental -->
+        <div class="service-overview-card fade-in-up" style="transition-delay: 0.1s;">
+          <div class="service-overview-img-container">
+            <img src="images/service_equip.png" alt="Equipment Rental" class="service-overview-img">
+          </div>
+          <div class="service-overview-content">
+            <h3 class="service-overview-title" data-i18n="srv_equip_title">Equipment Rental</h3>
+            <p class="service-overview-text" data-i18n="srv_equip_text">Reliable machinery and support equipment for construction and field operations.</p>
+            <a href="equipment.html" class="service-overview-cta" data-i18n="explore_further">
+              Explore further
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
           </div>
         </div>
 
-        <!-- Service 3 -->
-        <div class="service-card fade-in-up"
-          style="background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: var(--transition); transition-delay: 0.2s;">
-          <img src="images/service_energy.png" alt="Energy Infrastructure Projects"
-            style="height: 200px; width: 100%; object-fit: cover;">
-          <div style="padding: 2rem;">
-            <h3 data-i18n="srv_energy_proj_title" style="margin-bottom: 1rem;">Energy Infrastructure Projects</h3>
-            <p data-i18n="srv_energy_proj_text" style="color: var(--text-muted); margin-bottom: 1.5rem;">Operational and
-              project support for energy and infrastructure initiatives, with a focus on logistics, coordination, and
-              field execution.</p>
-            <a href="services.html" data-i18n="explore_further" style="color: var(--accent);">Explore further &rarr;</a>
+        <!-- Service: Energy & Infrastructure -->
+        <div class="service-overview-card fade-in-up" style="transition-delay: 0.2s;">
+          <div class="service-overview-img-container">
+            <img src="images/service_energy.png" alt="Energy Infrastructure Projects" class="service-overview-img">
+          </div>
+          <div class="service-overview-content">
+            <h3 class="service-overview-title" data-i18n="srv_energy_proj_title">Energy Infrastructure Projects</h3>
+            <p class="service-overview-text" data-i18n="srv_energy_proj_text">Project support for energy systems, logistics, and infrastructure execution.</p>
+            <a href="energy.html" class="service-overview-cta" data-i18n="explore_further">
+              Explore further
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service: Construction & Renovations -->
+        <div class="service-overview-card fade-in-up" style="transition-delay: 0.3s;">
+          <div class="service-overview-img-container">
+            <img src="images/const_renovations.jpg" alt="Construction & Renovations" class="service-overview-img">
+          </div>
+          <div class="service-overview-content">
+            <h3 class="service-overview-title" data-i18n="srv_const_title">Construction & Renovations</h3>
+            <p class="service-overview-text" data-i18n="srv_const_text">Construction and renovation services for residential, commercial, and operational projects.</p>
+            <a href="construction.html" class="service-overview-cta" data-i18n="explore_further">
+              Explore further
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
           </div>
         </div>
 
