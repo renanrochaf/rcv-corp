@@ -664,11 +664,11 @@ footer {
   /* Specific fix for Who We Are section mobile order */
   .who-we-are .grid-2.align-center.gap-4 {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .hero-home {
-    display: none !important;
+    display: block !important;
   }
 }
 
