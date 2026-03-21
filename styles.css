@@ -118,9 +118,8 @@ h1.section-title {
 }
 
 .hero-title {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1rem, 4.5vw, 4rem);
   line-height: 1.15;
-  text-wrap: balance;
   letter-spacing: -0.02em;
 }
 
@@ -144,6 +143,7 @@ h1.section-title {
   border: none;
   transition: var(--transition);
   text-align: center;
+  min-width: 220px;
 }
 
 .btn-primary {
@@ -200,7 +200,7 @@ header {
 }
 
 header.scrolled {
-  padding: 0.5rem 0;
+  padding: 0;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
@@ -212,14 +212,13 @@ header.scrolled {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -1px;
-  color: var(--primary);
+  display: flex;
+  align-items: center;
 }
 
-.logo span {
-  color: var(--accent);
+.logo img {
+  height: 28px;
+  width: auto;
 }
 
 .nav-links {
