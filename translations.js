@@ -7,9 +7,9 @@ window.translations = {
     "nav_esg": "ESG",
     "nav_contact": "Contact",
     "nav_srv_summit": "Summit Rental Car",
-    "nav_srv_equip": "RCV Corp Equipment Rental",
-    "nav_srv_energy": "RCV Corp Energy & Infrastructure",
-    "nav_srv_const": "RCV Corp Construction & Renovations",
+    "nav_srv_equip": "Equipment Rental",
+    "nav_srv_energy": "Energy & Infrastructure",
+    "nav_srv_const": "Construction & Renovations",
 
     // Shared Footer
     "footer_tagline": "Engineering • Infrastructure • Equipment & Fleet Solutions",
@@ -19,7 +19,7 @@ window.translations = {
     "footer_rights": "&copy; 2026 RCV Corporation. All rights reserved.",
 
     // Home Page
-    "hero_title": "Integrated Solutions for Transportation, Equipment, and Infrastructure",
+    "hero_title": "Integrated Solutions Built to Power Your Operations",
     "hero_subtitle": "Equipment solutions and infrastructure support with a focus on efficiency, trust, and operational excellence.",
     "btn_contact": "Contact Us",
     "btn_explore": "Explore Services",
@@ -272,9 +272,9 @@ window.translations = {
     "nav_esg": "ESG",
     "nav_contact": "Contato",
     "nav_srv_summit": "Summit Aluguel de Carros",
-    "nav_srv_equip": "RCV Corp Aluguel de Equipamentos",
-    "nav_srv_energy": "RCV Corp Energia e Infraestrutura",
-    "nav_srv_const": "RCV Corp Construção e Reformas",
+    "nav_srv_equip": "Aluguel de Equipamentos",
+    "nav_srv_energy": "Energia e Infraestrutura",
+    "nav_srv_const": "Construção e Reformas",
 
     // Shared Footer
     "footer_tagline": "Engenharia • Infraestrutura • Soluções em Equipamentos e Frotas",
@@ -284,7 +284,7 @@ window.translations = {
     "footer_rights": "&copy; 2026 RCV Corporation. Todos os direitos reservados.",
 
     // Home Page
-    "hero_title": "Soluções Integradas para Transporte, Equipamentos e Infraestrutura",
+    "hero_title": "Soluções Integradas Construídas para Impulsionar suas Operações",
     "hero_subtitle": "Soluções em equipamentos e suporte de infraestrutura com foco em eficiência, confiança e excelência operacional.",
     "btn_contact": "Fale Conosco",
     "btn_explore": "Explorar Serviços",
