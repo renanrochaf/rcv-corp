@@ -68,8 +68,13 @@
       <div class="grid-2 gap-4">
         
         <div class="fade-in-up" style="background: var(--white); padding: 4rem; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-          <div style="width: 60px; height: 60px; background: rgba(46, 91, 141, 0.1); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
-            🎯 <!-- Placeholder icon -->
+          <div style="width: 60px; height: 60px; background: rgba(46, 91, 141, 0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+            <!-- Mission: Target -->
+            <svg style="width: 32px; height: 32px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
           </div>
           <h3 style=" margin-bottom: 1.5rem;">Mission</h3>
           <p style="color: var(--text-muted);">
@@ -78,8 +83,12 @@
         </div>
 
         <div class="fade-in-up" style="background: var(--white); padding: 4rem; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition-delay: 0.1s;">
-          <div style="width: 60px; height: 60px; background: rgba(46, 91, 141, 0.1); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
-            👁️ <!-- Placeholder icon -->
+          <div style="width: 60px; height: 60px; background: rgba(46, 91, 141, 0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+            <!-- Vision: Eye -->
+            <svg style="width: 32px; height: 32px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;" viewBox="0 0 24 24">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
           </div>
           <h3 style=" margin-bottom: 1.5rem;">Vision</h3>
           <p style="color: var(--text-muted);">
@@ -100,29 +109,75 @@
       </div>
       
       <div class="grid-3">
-        <div style="padding: 2.5rem; border: 1px solid var(--light-gray); border-radius: 8px; transition: var(--transition);">
-          <h4 data-i18n="val_integrity" style=" margin-bottom: 1rem; color: var(--primary);">Integrity and Ethics</h4>
-          <p data-i18n="ab_val_integrity_text" style="color: var(--text-muted);">Unwavering transparency and ethical conduct in all internal and external engagements.</p>
+        <!-- Integrity and Ethics -->
+        <div class="value-card-premium">
+          <div class="value-icon-container">
+            <svg viewBox="0 0 24 24" class="value-icon-svg">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h4 data-i18n="val_integrity" class="value-card-title">Integrity and Ethics</h4>
+          <p data-i18n="ab_val_integrity_text" class="value-card-text">Unwavering transparency and ethical conduct in all internal and external engagements.</p>
         </div>
-        <div style="padding: 2.5rem; border: 1px solid var(--light-gray); border-radius: 8px; transition: var(--transition);">
-          <h4 data-i18n="val_op_exc" style=" margin-bottom: 1rem; color: var(--primary);">Operational Excellence</h4>
-          <p data-i18n="ab_val_op_exc_text" style="color: var(--text-muted);">Executing projects efficiently and upholding strict quality standards at all times.</p>
+
+        <!-- Operational Excellence -->
+        <div class="value-card-premium">
+          <div class="value-icon-container">
+            <svg viewBox="0 0 24 24" class="value-icon-svg">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+          </div>
+          <h4 data-i18n="val_op_exc" class="value-card-title">Operational Excellence</h4>
+          <p data-i18n="ab_val_op_exc_text" class="value-card-text">Executing projects efficiently and upholding strict quality standards at all times.</p>
         </div>
-        <div style="padding: 2.5rem; border: 1px solid var(--light-gray); border-radius: 8px; transition: var(--transition);">
-          <h4 data-i18n="val_safety" style=" margin-bottom: 1rem; color: var(--primary);">Safety & Responsibility</h4>
-          <p data-i18n="ab_val_safety_text" style="color: var(--text-muted);">Eliminating operational hazards carefully to protect our people and local communities.</p>
+
+        <!-- Safety & Responsibility -->
+        <div class="value-card-premium">
+          <div class="value-icon-container">
+            <svg viewBox="0 0 24 24" class="value-icon-svg">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <h4 data-i18n="val_safety" class="value-card-title">Safety & Responsibility</h4>
+          <p data-i18n="ab_val_safety_text" class="value-card-text">Eliminating operational hazards carefully to protect our people and local communities.</p>
         </div>
-        <div style="padding: 2.5rem; border: 1px solid var(--light-gray); border-radius: 8px; transition: var(--transition);">
-          <h4 data-i18n="val_enviro" style=" margin-bottom: 1rem; color: var(--primary);">Environmental Respect</h4>
-          <p data-i18n="ab_val_enviro_text" style="color: var(--text-muted);">Developing logistics and infrastructure correctly with a profound commitment to our environment.</p>
+
+        <!-- Environmental Respect -->
+        <div class="value-card-premium">
+          <div class="value-icon-container">
+            <svg viewBox="0 0 24 24" class="value-icon-svg">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 21 2c-2 5-2.5 6.5-3.6 12.2A7 7 0 0 1 11 20z"></path>
+            </svg>
+          </div>
+          <h4 data-i18n="val_enviro" class="value-card-title">Environmental Respect</h4>
+          <p data-i18n="ab_val_enviro_text" class="value-card-text">Developing logistics and infrastructure correctly with a profound commitment to our environment.</p>
         </div>
-        <div style="padding: 2.5rem; border: 1px solid var(--light-gray); border-radius: 8px; transition: var(--transition);">
-          <h4 data-i18n="val_innovation" style=" margin-bottom: 1rem; color: var(--primary);">Innovation & Improvement</h4>
-          <p data-i18n="ab_val_innovation_text" style="color: var(--text-muted);">Continuously pushing internal technical frameworks forward smoothly and productively.</p>
+
+        <!-- Innovation & Improvement -->
+        <div class="value-card-premium">
+          <div class="value-icon-container">
+            <svg viewBox="0 0 24 24" class="value-icon-svg">
+              <path d="M9.663 17h4.674M12 3v1m8 8h1M3 12h1m1.223-5.777.707.707m12.142 12.142.707.707M5.857 18.143l.707-.707m12.142-12.142.707-.707M9 21h6a2 2 0 0 0 2-2v-1a5 5 0 1 0-10 0v1a2 2 0 0 0 2 2z"></path>
+            </svg>
+          </div>
+          <h4 data-i18n="val_innovation" class="value-card-title">Innovation & Improvement</h4>
+          <p data-i18n="ab_val_innovation_text" class="value-card-text">Continuously pushing internal technical frameworks forward smoothly and productively.</p>
         </div>
-        <div style="padding: 2.5rem; border: 1px solid var(--light-gray); border-radius: 8px; transition: var(--transition);">
-          <h4 data-i18n="val_partner" style=" margin-bottom: 1rem; color: var(--primary);">Strategic Partnerships</h4>
-          <p data-i18n="ab_val_partner_text" style="color: var(--text-muted);">Enhancing collaboration positively to foster mutual success on a long-term scale.</p>
+
+        <!-- Strategic Partnerships -->
+        <div class="value-card-premium">
+          <div class="value-icon-container">
+            <svg viewBox="0 0 24 24" class="value-icon-svg">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h4 data-i18n="val_partner" class="value-card-title">Strategic Partnerships</h4>
+          <p data-i18n="ab_val_partner_text" class="value-card-text">Enhancing collaboration positively to foster mutual success on a long-term scale.</p>
         </div>
       </div>
     </div>
