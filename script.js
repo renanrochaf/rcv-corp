@@ -68,7 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     langBtns.forEach(btn => {
-      btn.textContent = lang === 'en' ? 'PT' : 'EN';
+      const flagSrc = lang === 'en' ? 'images/flag_br.png' : 'images/flag_us.png';
+      const label = lang === 'en' ? 'PT' : 'EN';
+      btn.innerHTML = `<img src="${flagSrc}" alt="${label} flag" style="width: 20px; height: auto; border-radius: 2px;"> ${label}`;
     });
 
     document.documentElement.lang = lang;

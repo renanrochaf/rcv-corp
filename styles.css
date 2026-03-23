@@ -144,6 +144,7 @@ h1.section-title {
 }
 
 
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -743,6 +744,10 @@ footer {
   cursor: pointer;
   margin-left: 1rem;
   transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
 }
 
 .lang-toggle:hover {
