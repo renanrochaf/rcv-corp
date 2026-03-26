@@ -15,7 +15,7 @@ window.translations = {
     "footer_tagline": "Engineering • Infrastructure • Equipment & Fleet Solutions",
     "footer_links": "Quick Links",
     "footer_location": "Location",
-    "footer_address": "Corporate Headquarters<br>United States",
+    "footer_address": "FL, USA.",
     "footer_rights": "&copy; 2026 RCV Corporation. All rights reserved.",
 
     // Home Page
@@ -284,7 +284,7 @@ window.translations = {
     "footer_tagline": "Engenharia • Infraestrutura • Soluções em Equipamentos e Frotas",
     "footer_links": "Links Rápidos",
     "footer_location": "Localização",
-    "footer_address": "Sede Corporativa<br>Estados Unidos",
+    "footer_address": "FL, USA.",
     "footer_rights": "&copy; 2026 RCV Corporation. Todos os direitos reservados.",
 
     // Home Page
